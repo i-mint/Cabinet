@@ -1480,7 +1480,8 @@ menu,
   .menu menuitem {
     min-height: 16px;
     min-width: 40px;
-    padding: 5px; }
+    padding: 5px;
+    border-bottom: 0.5px solid #3c3f46; }
     menu menuitem:hover,
     .menu menuitem:hover {
       color: #F7F7F7;
@@ -1617,9 +1618,8 @@ notebook {
         min-width: 20px;
         min-height: 20px;
         outline-offset: -4px;
+        border: 1px solid transparent;
         border-bottom: none;
-        border-bottom: 0.8px solid #787878;
-        padding-bottom: 2px;
         border-radius: 1px 1px 0 0; }
         notebook > header.top > tabs > tab + tab {
           margin-left: -1px; }
@@ -1630,9 +1630,8 @@ notebook {
         min-width: 20px;
         min-height: 20px;
         outline-offset: -4px;
+        border: 1px solid transparent;
         border-top: none;
-        border-bottom: 0.8px solid #787878;
-        padding-bottom: 2px;
         border-radius: 0 0 1px 1px; }
         notebook > header.bottom > tabs > tab + tab {
           margin-left: -1px; }
@@ -1643,9 +1642,8 @@ notebook {
         min-width: 20px;
         min-height: 20px;
         outline-offset: -4px;
+        border: 1px solid transparent;
         border-left: none;
-        border-bottom: 0.8px solid #787878;
-        padding-bottom: 2px;
         border-radius: 0 1px 1px 0; }
         notebook > header.right > tabs > tab + tab {
           margin-top: -1px; }
@@ -1656,9 +1654,8 @@ notebook {
         min-width: 20px;
         min-height: 20px;
         outline-offset: -4px;
+        border: 1px solid transparent;
         border-right: none;
-        border-bottom: 0.8px solid #787878;
-        padding-bottom: 2px;
         border-radius: 1px 0 0 1px; }
         notebook > header.left > tabs > tab + tab {
           margin-top: -1px; }
@@ -1699,10 +1696,7 @@ notebook {
       background-color: rgba(51, 53, 59, 0); }
       notebook > header > tabs > tab:hover:not(:checked) {
         color: #F7F7F7;
-        background-color: rgba(51, 53, 59, 0);
-        border-bottom-width: 1px;
-        padding-bottom: 1px;
-        border-color: #BA6717; }
+        background-color: rgba(51, 53, 59, 0); }
       notebook > header > tabs > tab:checked {
         color: #F7F7F7;
         background-color: #BA6717; }
@@ -3310,7 +3304,17 @@ button.documents-favorite:active:hover {
 
 .tweak-categories,
 .tweak-category:not(:selected):not(:hover) {
-  background-image: linear-gradient(to bottom, #33353B, #33353B); }
+  background-image: linear-gradient(to bottom, #33353B, #33353B);
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent; }
+
+row.tweak-category:hover {
+  border-left: 2px solid #BA6717;
+  border-right: 2px solid #BA6717; }
+row.tweak-category:focus {
+  background-color: rgba(186, 103, 23, 0.56);
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent; }
 
 .tr-workarea undershoot,
 .tr-workarea overshoot {
@@ -3975,7 +3979,7 @@ filechooser placessidebar.sidebar,
   background-color: rgba(29, 29, 32, 0.95); }
   filechooser placessidebar.sidebar row.sidebar-row,
   .nautilus-window placessidebar.sidebar row.sidebar-row {
-    border-bottom: 0.1px solid #F7F7F7;
+    border-bottom: 0.5px solid #3a3c43;
     color: #F7F7F7;
     padding-left: 2px;
     padding-right: 2px; }
@@ -4043,6 +4047,12 @@ filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
   background-color: #1d1d20; }
 
+.nemo-window .nemo-window-pane .view, .nemo-window .nemo-window-pane iconview {
+  background-color: #44464e;
+  color: #F7F7F7; }
+.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
+  background-color: #33353B;
+  color: rgba(247, 247, 247, 0.56); }
 .nemo-window .sidebar {
   color: #F7F7F7;
   background-color: rgba(29, 29, 32, 0.95); }
@@ -4052,6 +4062,9 @@ filechooser.maximized placessidebar.sidebar,
     .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
       background-color: #BA6717;
       color: #F7F7F7; }
+    .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
+      background-color: rgba(247, 247, 247, 0.12);
+      color: rgba(247, 247, 247, 0.78); }
     .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
       color: rgba(143, 143, 145, 0.975); }
       .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
