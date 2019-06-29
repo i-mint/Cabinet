@@ -4124,6 +4124,9 @@ filechooser .nautilus-desktop,
     .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
       background-color: #88B6D6;
       color: #F7F7F7; }
+      .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar row.cell:selected:hover {
+        color: #F7F7F7;
+        background-color: #88B6D6; }
     .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
       background-color: rgba(247, 247, 247, 0.12);
       color: rgba(247, 247, 247, 0.78); }
