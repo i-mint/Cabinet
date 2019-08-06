@@ -4115,7 +4115,8 @@ filechooser headerbar widget stack box.path-bar-box,
   background-color: rgba(39, 44, 51, 0.95); }
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
     background-color: transparent;
-    color: rgba(247, 247, 247, 0.78); }
+    color: rgba(247, 247, 247, 0.78);
+    border-bottom: 0.5px solid #4b4e56; }
     .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
       background-color: #88B6D6;
       color: #F7F7F7; }
