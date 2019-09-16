@@ -4379,12 +4379,33 @@ filechooser placessidebar.sidebar scrollbar,
     color: #171717;
     border-color: transparent; }
 
-.budgie-popover list {
-  background-color: #F0F0F0; }
-
+/*
+.budgie-popover {
+	& list {
+		background-color: if($variant=='dark', lighten($panel_bg, 4%), $base_color);
+		}
+	}
+*/
 .budgie-panel {
   background-color: rgba(37, 35, 29, 0.95);
   color: #F7F7F7; }
+  .budgie-panel widget button {
+    background-color: transparent;
+    border-color: transparent;
+    color: #F7F7F7; }
+    .budgie-panel widget button image {
+      color: #F7F7F7; }
+    .budgie-panel widget button:hover, .budgie-panel widget button:checked, .budgie-panel widget button:selected {
+      border-color: transparent;
+      background-color: transparent;
+      color: #F7F7F7; }
+    .budgie-panel widget button:hover image, .budgie-panel widget button:checked image, .budgie-panel widget button:selected image {
+      color: #DE954E; }
+    .budgie-panel widget button:active image {
+      color: #e4a76c; }
+    .budgie-panel widget button:active {
+      border-color: transparent;
+      background-color: transparent; }
 
 .raven-trigger stack > image {
   background-color: transparent;
@@ -4398,4 +4419,40 @@ filechooser placessidebar.sidebar scrollbar,
   background-color: transparent;
   border-color: transparent; }
   .raven-trigger:active stack > image {
-    color: #e19f5f; }
+    color: #e4a76c; }
+
+.budgie-popover {
+  border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  border-radius: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+  background-color: #F0F0F0; }
+  .budgie-popover list {
+    background-color: transparent; }
+  .budgie-popover.places-menu {
+    background-color: #F0F0F0;
+    border-color: #F0F0F0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17); }
+    .budgie-popover.places-menu row:hover {
+      border-radius: 0px;
+      border-color: transparent;
+      color: #171717;
+      background-color: rgba(0, 0, 0, 0.04); }
+  .budgie-popover button:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: #171717; }
+  .budgie-popover.user-menu {
+    background-color: #F0F0F0;
+    border-color: #F0F0F0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17); }
+    .budgie-popover.user-menu row:hover {
+      border-radius: 0px;
+      border-color: transparent;
+      color: #171717;
+      background-color: rgba(0, 0, 0, 0.04); }
+    .budgie-popover.user-menu button:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: #171717; }

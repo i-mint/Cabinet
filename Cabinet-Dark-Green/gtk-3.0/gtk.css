@@ -4369,7 +4369,7 @@ filechooser placessidebar.sidebar scrollbar,
     background-color: #12846e;
     color: #F7F7F7; }
 .budgie-menu row {
-  background-color: rgba(37, 43, 42, 0.95);
+  background-color: rgba(28, 32, 31, 0.95);
   border-bottom: 0.5px solid #3c3f46; }
   .budgie-menu row:hover {
     background-color: rgba(255, 255, 255, 0.02); }
@@ -4378,12 +4378,33 @@ filechooser placessidebar.sidebar scrollbar,
     color: #F7F7F7;
     border-color: transparent; }
 
-.budgie-popover list {
-  background-color: rgba(37, 43, 42, 0.95); }
-
+/*
+.budgie-popover {
+	& list {
+		background-color: if($variant=='dark', lighten($panel_bg, 4%), $base_color);
+		}
+	}
+*/
 .budgie-panel {
   background-color: rgba(28, 32, 31, 0.95);
   color: rgba(247, 247, 247, 0.78); }
+  .budgie-panel widget button {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba(247, 247, 247, 0.78); }
+    .budgie-panel widget button image {
+      color: rgba(247, 247, 247, 0.78); }
+    .budgie-panel widget button:hover, .budgie-panel widget button:checked, .budgie-panel widget button:selected {
+      border-color: transparent;
+      background-color: transparent;
+      color: rgba(247, 247, 247, 0.78); }
+    .budgie-panel widget button:hover image, .budgie-panel widget button:checked image, .budgie-panel widget button:selected image {
+      color: #12846e; }
+    .budgie-panel widget button:active image {
+      color: #16a388; }
+    .budgie-panel widget button:active {
+      border-color: transparent;
+      background-color: transparent; }
 
 .raven-trigger stack > image {
   background-color: transparent;
@@ -4397,4 +4418,40 @@ filechooser placessidebar.sidebar scrollbar,
   background-color: transparent;
   border-color: transparent; }
   .raven-trigger:active stack > image {
-    color: #14967d; }
+    color: #16a388; }
+
+.budgie-popover {
+  border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  border-radius: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+  background-color: rgba(28, 32, 31, 0.95); }
+  .budgie-popover list {
+    background-color: transparent; }
+  .budgie-popover.places-menu {
+    background-color: rgba(28, 32, 31, 0.95);
+    border-color: rgba(28, 32, 31, 0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17); }
+    .budgie-popover.places-menu row:hover {
+      border-radius: 0px;
+      border-color: transparent;
+      color: #F7F7F7;
+      background-color: rgba(255, 255, 255, 0.02); }
+  .budgie-popover button:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: #F7F7F7; }
+  .budgie-popover.user-menu {
+    background-color: rgba(28, 32, 31, 0.95);
+    border-color: rgba(28, 32, 31, 0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17); }
+    .budgie-popover.user-menu row:hover {
+      border-radius: 0px;
+      border-color: transparent;
+      color: #F7F7F7;
+      background-color: rgba(255, 255, 255, 0.02); }
+    .budgie-popover.user-menu button:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: #F7F7F7; }
