@@ -4129,7 +4129,8 @@ filechooser headerbar widget stack box.path-bar-box,
   border-color: rgba(0, 0, 0, 0.35);
   background-color: rgba(48, 69, 90, 0.35);
   background-color: #2D3741;
-  color: #88B6D6; }
+  color: #88B6D6;
+  border: 1px solid rgba(0, 0, 0, 0.35); }
   filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button,
   .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button {
     color: rgba(248, 246, 246, 0.8);
