@@ -4691,3 +4691,9 @@ filechooser placessidebar.sidebar scrollbar,
       padding-bottom: 7px;
       border-bottom: 1px solid #18b092;
       box-shadow: 1px 2px rgba(0, 0, 0, 0.22); }
+
+.background headerbar entry.pathbar {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 4px;
+  padding-right: 4px; }
