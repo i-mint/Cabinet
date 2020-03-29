@@ -3418,6 +3418,10 @@ row.tweak-category:focus {
   background-color: rgba(136, 182, 214, 0.56);
   border-left: 2px solid transparent;
   border-right: 2px solid transparent; }
+row.tweak-category:selected {
+  background-color: #88B6D6;
+  border-left: 2px solid #88B6D6;
+  border-right: 2px solid #88B6D6; }
 
 .tr-workarea undershoot,
 .tr-workarea overshoot {

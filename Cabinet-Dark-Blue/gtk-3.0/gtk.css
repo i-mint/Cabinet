@@ -3419,6 +3419,10 @@ row.tweak-category:focus {
   background-color: rgba(93, 137, 167, 0.56);
   border-left: 2px solid transparent;
   border-right: 2px solid transparent; }
+row.tweak-category:selected {
+  background-color: #5D89A7;
+  border-left: 2px solid #5D89A7;
+  border-right: 2px solid #5D89A7; }
 
 .tr-workarea undershoot,
 .tr-workarea overshoot {
