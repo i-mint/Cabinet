@@ -282,6 +282,10 @@ button {
       opacity: 0.6; }
       button:disabled:active label, button:disabled:active, button:disabled:checked label, button:disabled:checked {
         color: rgba(247, 247, 247, 0.8); }
+  button:backdrop label, button:backdrop {
+    color: rgba(247, 247, 247, 0.67); }
+  button:backdrop:hover label, button:backdrop:hover {
+    color: rgba(247, 247, 247, 0.67); }
   button.image-button {
     min-width: 24px;
     padding-left: 5px;
@@ -791,6 +795,8 @@ combobox button.combo {
   min-width: 0;
   padding-left: 8px;
   padding-right: 8px; }
+  combobox button.combo:backdrop {
+    border-color: rgba(26, 25, 23, 0.67); }
 combobox arrow {
   -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
   min-height: 16px;
@@ -2446,6 +2452,9 @@ list {
   border-color: #1a1917; }
   list row {
     padding: 2px; }
+  list:backdrop, list row:backdrop {
+    color: rgba(247, 247, 247, 0.67);
+    border-color: rgba(26, 25, 23, 0.78); }
 
 row {
   border-bottom: 0.1px solid black; }
@@ -2560,6 +2569,9 @@ filechooser #pathbarbox {
 filechooserbutton:drop(active) {
   box-shadow: none;
   border-color: transparent; }
+
+filechooserbutton button:backdrop {
+  border-color: rgba(26, 25, 23, 0.67); }
 
 .sidebar {
   border-style: none;
@@ -3419,6 +3431,9 @@ row.tweak-category:focus {
   background-color: rgba(198, 119, 42, 0.56);
   border-left: 2px solid transparent;
   border-right: 2px solid transparent; }
+row.tweak-category:backdrop:hover {
+  border-left: 2px solid rgba(198, 119, 42, 0.56);
+  border-right: 2px solid rgba(198, 119, 42, 0.56); }
 row.tweak-category:selected {
   background-color: #C6772A;
   border-left: 2px solid #C6772A;
