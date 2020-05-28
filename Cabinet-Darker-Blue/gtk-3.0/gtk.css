@@ -1453,6 +1453,8 @@ menu, .menu {
     min-width: 40px;
     padding: 5px;
     border-bottom: 0.5px solid #b1b4bc; }
+    menu menuitem:nth-child(1), .menu menuitem:nth-child(1) {
+      border-bottom: 0px solid transparent; }
     menu menuitem:hover, .menu menuitem:hover {
       color: #F7F7F7;
       background-color: #88B6D6; }
