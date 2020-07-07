@@ -1085,6 +1085,28 @@ headerbar .linked:not(.vertical).path-bar > button {
   .primary-toolbar .linked:not(.vertical).path-bar > button:disabled,
   headerbar .linked:not(.vertical).path-bar > button:disabled {
     color: rgba(248, 246, 246, 0.4); }
+  .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:backdrop label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:backdrop label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:backdrop image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:backdrop image, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:backdrop, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:backdrop,
+  .primary-toolbar .linked:not(.vertical).path-bar > button:backdrop label,
+  headerbar .linked:not(.vertical).path-bar > button:backdrop label,
+  .primary-toolbar .linked:not(.vertical).path-bar > button:backdrop image,
+  headerbar .linked:not(.vertical).path-bar > button:backdrop image,
+  .primary-toolbar .linked:not(.vertical).path-bar > button:backdrop,
+  headerbar .linked:not(.vertical).path-bar > button:backdrop {
+    color: rgba(248, 246, 246, 0.58); }
+  .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active:backdrop label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active:backdrop label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active:backdrop image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active:backdrop image, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active:backdrop, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active:backdrop, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked:backdrop label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked:backdrop label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked:backdrop image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked:backdrop image, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked:backdrop, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked:backdrop,
+  .primary-toolbar .linked:not(.vertical).path-bar > button:active:backdrop label,
+  headerbar .linked:not(.vertical).path-bar > button:active:backdrop label,
+  .primary-toolbar .linked:not(.vertical).path-bar > button:active:backdrop image,
+  headerbar .linked:not(.vertical).path-bar > button:active:backdrop image,
+  .primary-toolbar .linked:not(.vertical).path-bar > button:active:backdrop,
+  headerbar .linked:not(.vertical).path-bar > button:active:backdrop,
+  .primary-toolbar .linked:not(.vertical).path-bar > button:checked:backdrop label,
+  headerbar .linked:not(.vertical).path-bar > button:checked:backdrop label,
+  .primary-toolbar .linked:not(.vertical).path-bar > button:checked:backdrop image,
+  headerbar .linked:not(.vertical).path-bar > button:checked:backdrop image,
+  .primary-toolbar .linked:not(.vertical).path-bar > button:checked:backdrop,
+  headerbar .linked:not(.vertical).path-bar > button:checked:backdrop {
+    color: rgba(247, 247, 247, 0.78); }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button + button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button + button,
 .primary-toolbar .linked:not(.vertical).path-bar > button + button,
 headerbar .linked:not(.vertical).path-bar > button + button {
@@ -2466,10 +2488,10 @@ list {
     padding: 2px; }
   list:backdrop, list row:backdrop {
     color: rgba(247, 247, 247, 0.67);
-    border-color: rgba(26, 30, 34, 0.78); }
+    border-color: rgba(247, 247, 247, 0.08); }
 
 row {
-  border-bottom: 0.1px solid black; }
+  border-bottom: 0.1px solid rgba(247, 247, 247, 0.12); }
   row:not(:hover) {
     transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   row.activatable.has-open-popup, row.activatable:hover {
@@ -2991,7 +3013,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
 .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover {
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
   background-color: #5D89A7; }
   row:selected label, label:selected, .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
   .view text:selected,
@@ -3009,7 +3031,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:selected,
   .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
   .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-  .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover {
+  .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
     color: #F7F7F7; }
     row:selected label:backdrop, label:backdrop:selected, .view:backdrop:selected, iconview:backdrop:selected, iconview:backdrop:selected:focus,
     .view text:backdrop:selected,
@@ -3023,7 +3045,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     modelbutton.flat:backdrop:selected,
     modelbutton.flat:selected arrow:backdrop, treeview.view:backdrop:selected:focus, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-    .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover {
+    .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected {
       color: rgba(247, 247, 247, 0.78); }
     row:selected label:disabled, label:disabled:selected, .view:disabled:selected, iconview:disabled:selected, iconview:disabled:selected:focus,
     .view text:disabled:selected,
@@ -3037,7 +3059,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     modelbutton.flat:disabled:selected,
     modelbutton.flat:selected arrow:disabled, treeview.view:disabled:selected:focus, row:disabled:selected, calendar:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected,
-    .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover {
+    .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .nemo-window .sidebar .view.cell:disabled:selected, .nemo-window .sidebar iconview.cell:disabled:selected, .nemo-window .sidebar row.cell:disabled:selected {
       color: #aac0cf; }
   .view:backdrop:selected, iconview:backdrop:selected, iconview:backdrop:selected:focus,
   .view text:backdrop:selected,
@@ -3051,7 +3073,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   modelbutton.flat:backdrop:selected,
   modelbutton.flat:selected arrow:backdrop, treeview.view:backdrop:selected:focus, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
   .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-  .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover {
+  .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected {
     color: rgba(247, 247, 247, 0.78);
     background-color: rgba(93, 137, 167, 0.78); }
 
@@ -4356,15 +4378,14 @@ filechooser headerbar widget stack box.path-bar-box,
     background-color: transparent;
     color: rgba(247, 247, 247, 0.78);
     border-bottom: 0.5px solid #3a3c43; }
-    .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
-      background-color: #5D89A7;
-      color: #F7F7F7; }
-      .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar row.cell:selected:hover {
-        color: #F7F7F7;
-        background-color: #5D89A7; }
+    .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar row.cell:selected:hover {
+      color: #F7F7F7;
+      background-color: #5D89A7; }
     .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
       background-color: rgba(247, 247, 247, 0.12);
       color: rgba(247, 247, 247, 0.78); }
+    .nemo-window .sidebar .view:backdrop, .nemo-window .sidebar iconview:backdrop, .nemo-window .sidebar row:backdrop {
+      color: rgba(247, 247, 247, 0.45); }
     .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
       color: rgba(125, 128, 132, 0.865); }
       .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
