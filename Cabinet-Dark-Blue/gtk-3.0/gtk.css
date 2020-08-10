@@ -2981,7 +2981,7 @@ textview text:selected,
 iconview text:selected:focus,
 textview text:selected:focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
 textview text selection:focus,
-textview text selection, flowbox flowboxchild:selected, entry selection:focus, entry selection, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+textview text selection, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
 modelbutton.flat:active,
 modelbutton.flat:active arrow,
 modelbutton.flat:selected,
@@ -2999,7 +2999,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   iconview text:selected:focus,
   textview text:selected:focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
   textview text selection:focus,
-  textview text selection, flowbox flowboxchild:selected, entry selection:focus, entry selection, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+  textview text selection, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
   modelbutton.flat:active,
   modelbutton.flat:active arrow,
   modelbutton.flat:selected,
@@ -3015,7 +3015,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     textview text:backdrop:selected,
     iconview text:backdrop:selected:focus,
     textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
-    textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+    textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
     modelbutton.flat:backdrop:active,
     modelbutton.flat:active arrow:backdrop,
     modelbutton.flat:backdrop:selected,
@@ -3029,7 +3029,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     textview text:disabled:selected,
     iconview text:disabled:selected:focus,
     textview text:disabled:selected:focus, iconview text selection:disabled:focus, .view text selection:disabled, iconview text selection:disabled,
-    textview text selection:disabled, flowbox flowboxchild:disabled:selected, label:disabled selection, entry selection:disabled, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled,
+    textview text selection:disabled, flowbox flowboxchild:disabled:selected, label:disabled selection, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled,
     modelbutton.flat:disabled:active,
     modelbutton.flat:active arrow:disabled,
     modelbutton.flat:disabled:selected,
@@ -3043,7 +3043,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   textview text:backdrop:selected,
   iconview text:backdrop:selected:focus,
   textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
-  textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+  textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
   modelbutton.flat:backdrop:active,
   modelbutton.flat:active arrow:backdrop,
   modelbutton.flat:backdrop:selected,
@@ -3057,6 +3057,18 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     color: #F7F7F7; }
     row:selected label:disabled, label:disabled:selected {
       color: #aac0cf; }
+
+entry selection:focus, entry selection {
+  background-color: #F7F7F7; }
+  entry selection:focus, entry selection {
+    color: #5D89A7; }
+    entry selection:backdrop {
+      color: rgba(93, 137, 167, 0.45); }
+    entry selection:disabled {
+      color: #aac0cf; }
+  entry selection:backdrop {
+    background-color: rgba(247, 247, 247, 0.45);
+    color: rgba(93, 137, 167, 0.45); }
 
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
@@ -3746,6 +3758,42 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
 .thunar notebook tabs > tab button.flat:hover, .thunar notebook tabs > tab button.sidebar-button:hover {
   background-color: #4a5b6b;
   border: 0.5px solid #3c4956; }
+
+#whiskermenu-window {
+  background-color: #272D33;
+  color: #F7F7F7; }
+  #whiskermenu-window stack {
+    background-color: #272D33;
+    color: #F7F7F7; }
+  #whiskermenu-window .view, #whiskermenu-window iconview {
+    background-color: #2D3741;
+    color: #F3F3F3; }
+    #whiskermenu-window .view:selected, #whiskermenu-window iconview:selected {
+      background-color: #4a5b6b; }
+  #whiskermenu-window button {
+    margin-right: 9px;
+    background-color: #272D33;
+    color: #F7F7F7;
+    border: none; }
+    #whiskermenu-window button:hover {
+      background-color: #46515b;
+      color: inherit; }
+    #whiskermenu-window button:active, #whiskermenu-window button:checked {
+      background-color: #5D89A7;
+      color: #F7F7F7; }
+  #whiskermenu-window entry:focus, #whiskermenu-window entry.search {
+    color: #F7F7F7;
+    border-color: #5D89A7;
+    background-color: #5D89A7;
+    box-shadow: inset 1px 0 #5D89A7, inset -1px 0 #5D89A7, inset 0 1px #5D89A7, inset 0 -1px #5D89A7; }
+    #whiskermenu-window entry:focus image, #whiskermenu-window entry:focus image:hover, #whiskermenu-window entry.search image, #whiskermenu-window entry.search image:hover {
+      color: inherit; }
+
+#whiskermenu-button {
+  color: rgba(247, 247, 247, 0.78);
+  border-left: 22px solid rgba(81, 92, 106, 0.95);
+  border-right: 22px solid rgba(81, 92, 106, 0.95);
+  background-color: rgba(81, 92, 106, 0.95); }
 
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
