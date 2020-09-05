@@ -3058,6 +3058,15 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     color: rgba(247, 247, 247, 0.78);
     background-color: rgba(136, 182, 214, 0.78); }
 
+.nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .nemo-window .nemo-inactive-pane .iconview:selected {
+  background-color: rgba(136, 182, 214, 0.56); }
+  row:selected label, label:selected, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .nemo-window .nemo-inactive-pane .iconview:selected {
+    color: rgba(247, 247, 247, 0.78); }
+    row:selected label:backdrop, label:backdrop:selected, .nemo-window .nemo-inactive-pane .view:backdrop:selected, .nemo-window .nemo-inactive-pane iconview:backdrop:selected, .nemo-window .nemo-inactive-pane .iconview:backdrop:selected {
+      color: rgba(247, 247, 247, 0.56); }
+    row:selected label:disabled, label:disabled:selected, .nemo-window .nemo-inactive-pane .view:disabled:selected, .nemo-window .nemo-inactive-pane iconview:disabled:selected, .nemo-window .nemo-inactive-pane .iconview:disabled:selected {
+      color: #c0d7e7; }
+
   row:selected label, label:selected {
     color: #F7F7F7; }
     row:selected label:disabled, label:disabled:selected {
