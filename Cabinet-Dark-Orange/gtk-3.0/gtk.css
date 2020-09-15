@@ -1647,7 +1647,7 @@ notebook {
   notebook > stack:not(:only-child) {
     background-color: #3B3933; }
   notebook > header {
-    padding: 2px;
+    padding: 0px;
     background-color: #2A2926; }
     notebook > header.top {
       box-shadow: inset 0 -1px #1a1917; }
@@ -1730,16 +1730,20 @@ notebook {
       notebook > header > tabs > arrow:disabled {
         color: rgba(247, 247, 247, 0.15); }
     notebook > header.top > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 -1px #1a1917; }
+      box-shadow: inset 0 -1px #2A2926; }
     notebook > header.bottom > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 1px #1a1917; }
+      box-shadow: inset 0 1px #2A2926; }
     notebook > header.left > tabs > tab:hover:not(:checked) {
-      box-shadow: inset -1px 0 #1a1917; }
+      box-shadow: inset -1px 0 #2A2926; }
     notebook > header.right > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 1px 0 #1a1917; }
+      box-shadow: inset 1px 0 #2A2926; }
     notebook > header > tabs > tab {
       color: rgba(247, 247, 247, 0.45);
-      background-color: rgba(59, 57, 51, 0); }
+      background-color: rgba(59, 57, 51, 0);
+      margin-top: -1px;
+      margin-right: -1px;
+      margin-bottom: 1px;
+      margin-left: -1px; }
       notebook > header > tabs > tab:backdrop {
         color: rgba(247, 247, 247, 0.23); }
       notebook > header > tabs > tab:hover:not(:checked) {
@@ -2997,7 +3001,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
 .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover {
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
   background-color: #C6772A; }
   row:selected label, label:selected, .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
   .view text:selected,
@@ -3015,7 +3019,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:selected,
   .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
   .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-  .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover {
+  .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
     color: #F7F7F7; }
     row:selected label:backdrop, label:backdrop:selected, .view:backdrop:selected, iconview:backdrop:selected, iconview:backdrop:selected:focus,
     .view text:backdrop:selected,
@@ -3029,7 +3033,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     modelbutton.flat:backdrop:selected,
     modelbutton.flat:selected arrow:backdrop, treeview.view:backdrop:selected:focus, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-    .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover {
+    .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected {
       color: rgba(247, 247, 247, 0.78); }
     row:selected label:disabled, label:disabled:selected, .view:disabled:selected, iconview:disabled:selected, iconview:disabled:selected:focus,
     .view text:disabled:selected,
@@ -3043,7 +3047,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     modelbutton.flat:disabled:selected,
     modelbutton.flat:selected arrow:disabled, treeview.view:disabled:selected:focus, row:disabled:selected, calendar:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected,
-    .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover {
+    .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .nemo-window .sidebar .view.cell:disabled:selected, .nemo-window .sidebar iconview.cell:disabled:selected, .nemo-window .sidebar row.cell:disabled:selected {
       color: #dfb791; }
   .view:backdrop:selected, iconview:backdrop:selected, iconview:backdrop:selected:focus,
   .view text:backdrop:selected,
@@ -3057,7 +3061,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   modelbutton.flat:backdrop:selected,
   modelbutton.flat:selected arrow:backdrop, treeview.view:backdrop:selected:focus, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
   .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-  .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover {
+  .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected {
     color: rgba(247, 247, 247, 0.78);
     background-color: rgba(198, 119, 42, 0.78); }
 
@@ -4269,6 +4273,7 @@ filechooser placessidebar.sidebar,
     .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup,
     .nautilus-window placessidebar.sidebar row.sidebar-row:hover {
       background-color: rgba(247, 247, 247, 0.15);
+      color: #F7F7F7;
       border-left: 2px solid #C6772A;
       border-right: 2px solid #C6772A;
       padding-left: 0px;
@@ -4277,6 +4282,7 @@ filechooser placessidebar.sidebar,
       .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:backdrop,
       .nautilus-window placessidebar.sidebar row.sidebar-row:hover:backdrop {
         background-color: rgba(247, 247, 247, 0.05);
+        color: rgba(247, 247, 247, 0.78);
         border-left: 2px solid rgba(198, 119, 42, 0.56);
         border-right: 2px solid rgba(198, 119, 42, 0.56);
         padding-left: 0px;
@@ -4469,12 +4475,9 @@ filechooser headerbar widget stack box.path-bar-box,
     background-color: transparent;
     color: #F7F7F7;
     border-bottom: 0.5px solid #3a3c43; }
-    .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
-      background-color: #C6772A;
-      color: #F7F7F7; }
-      .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar row.cell:selected:hover {
-        color: #F7F7F7;
-        background-color: #C6772A; }
+    .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar row.cell:selected:hover {
+      color: #F7F7F7;
+      background-color: #C6772A; }
     .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
       background-color: rgba(247, 247, 247, 0.12);
       color: rgba(247, 247, 247, 0.78); }

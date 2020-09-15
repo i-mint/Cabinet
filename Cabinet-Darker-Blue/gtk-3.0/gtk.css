@@ -66,6 +66,8 @@ flowbox flowboxchild {
   flowbox flowboxchild:selected {
     outline-offset: -2px; }
 
+label.separator, popover label.separator, popover.background label.separator {
+  color: #171717; }
 label selection {
   color: #F7F7F7;
   background-color: #88B6D6; }
@@ -1644,7 +1646,7 @@ notebook {
   notebook > stack:not(:only-child) {
     background-color: #F0F0F0; }
   notebook > header {
-    padding: 2px;
+    padding: 0px;
     background-color: #E6E6E6; }
     notebook > header.top {
       box-shadow: inset 0 -1px #cfcfcf; }
@@ -1727,16 +1729,20 @@ notebook {
       notebook > header > tabs > arrow:disabled {
         color: rgba(23, 23, 23, 0.25); }
     notebook > header.top > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 -1px #cfcfcf; }
+      box-shadow: inset 0 -1px #E6E6E6; }
     notebook > header.bottom > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 1px #cfcfcf; }
+      box-shadow: inset 0 1px #E6E6E6; }
     notebook > header.left > tabs > tab:hover:not(:checked) {
-      box-shadow: inset -1px 0 #cfcfcf; }
+      box-shadow: inset -1px 0 #E6E6E6; }
     notebook > header.right > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 1px 0 #cfcfcf; }
+      box-shadow: inset 1px 0 #E6E6E6; }
     notebook > header > tabs > tab {
       color: rgba(23, 23, 23, 0.55);
-      background-color: rgba(240, 240, 240, 0); }
+      background-color: rgba(240, 240, 240, 0);
+      margin-top: -1px;
+      margin-right: -1px;
+      margin-bottom: 1px;
+      margin-left: -1px; }
       notebook > header > tabs > tab:backdrop {
         color: rgba(23, 23, 23, 0.33); }
       notebook > header > tabs > tab:hover:not(:checked) {
