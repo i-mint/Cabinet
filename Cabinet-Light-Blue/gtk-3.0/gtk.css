@@ -702,12 +702,18 @@ modelbutton.flat {
   padding-right: 8px;
   outline-offset: -3px;
   border-radius: 2px; }
-  menuitem.button.flat:hover,
-  modelbutton.flat:hover {
-    background-color: gainsboro; }
-  menuitem.button.flat:checked,
+  menuitem.button.flat:hover, menuitem.button.flat:active, menuitem.button.flat:selected, menuitem.button.flat:checked,
+  modelbutton.flat:hover,
+  modelbutton.flat:active,
+  modelbutton.flat:selected,
   modelbutton.flat:checked {
-    color: #171717; }
+    background-image: linear-gradient(to right, #88B6D6, #88B6D6); }
+    menuitem.button.flat:hover label, menuitem.button.flat:active label, menuitem.button.flat:selected label, menuitem.button.flat:checked label,
+    modelbutton.flat:hover label,
+    modelbutton.flat:active label,
+    modelbutton.flat:selected label,
+    modelbutton.flat:checked label {
+      color: inherit; }
   menuitem.button.flat check:last-child,
   menuitem.button.flat radio:last-child,
   modelbutton.flat check:last-child,
@@ -1850,54 +1856,6 @@ headerbar switch:checked:disabled,
 .primary-toolbar switch:checked:disabled {
   background-image: -gtk-scaled(url("assets/switch-active-insensitive-header.png"), url("assets/switch-active-insensitive-header@2.png")); }
 
-.nautilus-window popover stack box > modelbutton:active, popover modelbutton:active {
-  background-color: #88B6D6;
-  color: #F7F7F7; }
-.nautilus-window popover stack box > modelbutton check:hover, popover modelbutton check:hover {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-hover.png"), url("assets/checkbox-unchecked-hover@2.png")); }
-
-.nautilus-window popover stack box > modelbutton:active, popover modelbutton:active {
-  background-color: #88B6D6;
-  color: #F7F7F7; }
-.nautilus-window popover stack box > modelbutton check:hover:insensitive, popover modelbutton check:hover:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-hover-insensitive.png"), url("assets/checkbox-unchecked-hover-insensitive@2.png")); }
-
-.nautilus-window popover stack box > modelbutton:active, popover modelbutton:active {
-  background-color: #88B6D6;
-  color: #F7F7F7; }
-.nautilus-window popover stack box > modelbutton check:active, popover modelbutton check:active {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked.png"), url("assets/checkbox-checked@2.png")); }
-
-.nautilus-window popover stack box > modelbutton:active, popover modelbutton:active {
-  background-color: #88B6D6;
-  color: #F7F7F7; }
-.nautilus-window popover stack box > modelbutton check:checked:hover, popover modelbutton check:checked:hover {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked.png"), url("assets/checkbox-checked@2.png")); }
-
-.nautilus-window popover stack box > modelbutton:active, popover modelbutton:active {
-  background-color: #88B6D6;
-  color: #F7F7F7; }
-.nautilus-window popover stack box > modelbutton radio:hover, popover modelbutton radio:hover {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-hover.png"), url("assets/radio-unchecked-hover@2.png")); }
-
-.nautilus-window popover stack box > modelbutton:active, popover modelbutton:active {
-  background-color: #88B6D6;
-  color: #F7F7F7; }
-.nautilus-window popover stack box > modelbutton radio:hover:insensitive, popover modelbutton radio:hover:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-hover-insensitive.png"), url("assets/radio-unchecked-hover-insensitive@2.png")); }
-
-.nautilus-window popover stack box > modelbutton:active, popover modelbutton:active {
-  background-color: #88B6D6;
-  color: #F7F7F7; }
-.nautilus-window popover stack box > modelbutton radio:active, popover modelbutton radio:active {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked.png"), url("assets/radio-checked@2.png")); }
-
-.nautilus-window popover stack box > modelbutton:active, popover modelbutton:active {
-  background-color: #88B6D6;
-  color: #F7F7F7; }
-.nautilus-window popover stack box > modelbutton radio:checked:hover, popover modelbutton radio:checked:hover {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked.png"), url("assets/radio-checked@2.png")); }
-
 .check,
 check,
 treeview.check {
@@ -1907,6 +1865,7 @@ treeview.check {
 filechooser actionbar check {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"), url("assets/checkbox-unchecked-dark@2.png")); }
 
+popover check:hover,
 menuitem check:hover,
 .view check:selected,
 iconview check:selected,
@@ -1924,6 +1883,7 @@ treeview.check:disabled {
 filechooser actionbar check:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-dark.png"), url("assets/checkbox-unchecked-insensitive-dark@2.png")); }
 
+popover check:disabled:hover,
 menuitem check:disabled:hover,
 .view check:disabled:selected,
 iconview check:disabled:selected,
@@ -1941,6 +1901,7 @@ treeview.check:indeterminate {
 filechooser actionbar check:indeterminate {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-dark.png"), url("assets/checkbox-mixed-dark@2.png")); }
 
+popover check:indeterminate:hover,
 menuitem check:indeterminate:hover,
 .view check:indeterminate:selected,
 iconview check:indeterminate:selected,
@@ -1958,6 +1919,7 @@ treeview.check:indeterminate:disabled {
 filechooser actionbar check:indeterminate:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-dark.png"), url("assets/checkbox-mixed-insensitive-dark@2.png")); }
 
+popover check:indeterminate:disabled:hover,
 menuitem check:indeterminate:disabled:hover,
 .view check:indeterminate:disabled:selected,
 iconview check:indeterminate:disabled:selected,
@@ -1975,6 +1937,7 @@ treeview.check:checked {
 filechooser actionbar check:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
 
+popover check:checked:hover,
 menuitem check:checked:hover,
 .view check:checked:selected,
 iconview check:checked:selected,
@@ -1992,6 +1955,7 @@ treeview.check:checked:disabled {
 filechooser actionbar check:checked:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-dark.png"), url("assets/checkbox-checked-insensitive-dark@2.png")); }
 
+popover check:checked:disabled:hover,
 menuitem check:checked:disabled:hover,
 .view check:checked:disabled:selected,
 iconview check:checked:disabled:selected,
@@ -2009,6 +1973,7 @@ treeview.radio {
 filechooser actionbar radio {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"), url("assets/radio-unchecked-dark@2.png")); }
 
+popover radio:hover,
 menuitem radio:hover,
 .view radio:selected,
 iconview radio:selected,
@@ -2026,6 +1991,7 @@ treeview.radio:disabled {
 filechooser actionbar radio:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"), url("assets/radio-unchecked-insensitive-dark@2.png")); }
 
+popover radio:disabled:hover,
 menuitem radio:disabled:hover,
 .view radio:disabled:selected,
 iconview radio:disabled:selected,
@@ -2043,6 +2009,7 @@ treeview.radio:indeterminate {
 filechooser actionbar radio:indeterminate {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-dark.png"), url("assets/radio-mixed-dark@2.png")); }
 
+popover radio:indeterminate:hover,
 menuitem radio:indeterminate:hover,
 .view radio:indeterminate:selected,
 iconview radio:indeterminate:selected,
@@ -2060,6 +2027,7 @@ treeview.radio:indeterminate:disabled {
 filechooser actionbar radio:indeterminate:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"), url("assets/radio-mixed-insensitive-dark@2.png")); }
 
+popover radio:indeterminate:disabled:hover,
 menuitem radio:indeterminate:disabled:hover,
 .view radio:indeterminate:disabled:selected,
 iconview radio:indeterminate:disabled:selected,
@@ -2077,6 +2045,7 @@ treeview.radio:checked {
 filechooser actionbar radio:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
+popover radio:checked:hover,
 menuitem radio:checked:hover,
 .view radio:checked:selected,
 iconview radio:checked:selected,
@@ -2094,6 +2063,7 @@ treeview.radio:checked:disabled {
 filechooser actionbar radio:checked:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-dark.png"), url("assets/radio-checked-insensitive-dark@2.png")); }
 
+popover radio:checked:disabled:hover,
 menuitem radio:checked:disabled:hover,
 .view radio:checked:disabled:selected,
 iconview radio:checked:disabled:selected,
@@ -2101,6 +2071,12 @@ treeview.radio:checked:disabled:selected,
 row:selected radio:checked:disabled,
 infobar radio:checked:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-selected.png"), url("assets/radio-checked-insensitive-selected@2.png")); }
+
+popover check:active {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected.png"), url("assets/checkbox-checked-selected@2.png")); }
+
+popover radio:active {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected.png"), url("assets/radio-checked-selected@2.png")); }
 
 .view.content-view.check:not(list), iconview.content-view.check:not(list) {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-selectionmode.png"), url("assets/checkbox-selectionmode@2.png"));
@@ -2944,11 +2920,15 @@ textview text:selected,
 iconview text:selected:focus,
 textview text:selected:focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
 textview text selection:focus,
-textview text selection, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+textview text selection, flowbox flowboxchild:selected, menuitem.button.flat:hover, menuitem.button.flat:hover arrow, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow, menuitem.button.flat:checked, menuitem.button.flat:checked arrow,
+modelbutton.flat:hover,
+modelbutton.flat:hover arrow,
 modelbutton.flat:active,
 modelbutton.flat:active arrow,
 modelbutton.flat:selected,
-modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:selected, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
+modelbutton.flat:selected arrow,
+modelbutton.flat:checked,
+modelbutton.flat:checked arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:selected, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
@@ -2962,11 +2942,15 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   iconview text:selected:focus,
   textview text:selected:focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
   textview text selection:focus,
-  textview text selection, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+  textview text selection, flowbox flowboxchild:selected, menuitem.button.flat:hover, menuitem.button.flat:hover arrow, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow, menuitem.button.flat:checked, menuitem.button.flat:checked arrow,
+  modelbutton.flat:hover,
+  modelbutton.flat:hover arrow,
   modelbutton.flat:active,
   modelbutton.flat:active arrow,
   modelbutton.flat:selected,
-  modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:selected, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
+  modelbutton.flat:selected arrow,
+  modelbutton.flat:checked,
+  modelbutton.flat:checked arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:selected, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
   .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:selected,
   .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
   .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
@@ -2978,11 +2962,15 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     textview text:backdrop:selected,
     iconview text:backdrop:selected:focus,
     textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
-    textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+    textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:hover, menuitem.button.flat:hover arrow:backdrop, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop, menuitem.button.flat:backdrop:checked, menuitem.button.flat:checked arrow:backdrop,
+    modelbutton.flat:backdrop:hover,
+    modelbutton.flat:hover arrow:backdrop,
     modelbutton.flat:backdrop:active,
     modelbutton.flat:active arrow:backdrop,
     modelbutton.flat:backdrop:selected,
-    modelbutton.flat:selected arrow:backdrop, treeview.view:backdrop:selected:focus, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
+    modelbutton.flat:selected arrow:backdrop,
+    modelbutton.flat:backdrop:checked,
+    modelbutton.flat:checked arrow:backdrop, treeview.view:backdrop:selected:focus, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
     .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected {
       color: rgba(247, 247, 247, 0.78); }
@@ -2992,11 +2980,15 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     textview text:disabled:selected,
     iconview text:disabled:selected:focus,
     textview text:disabled:selected:focus, iconview text selection:disabled:focus, .view text selection:disabled, iconview text selection:disabled,
-    textview text selection:disabled, flowbox flowboxchild:disabled:selected, label:disabled selection, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled,
+    textview text selection:disabled, flowbox flowboxchild:disabled:selected, label:disabled selection, menuitem.button.flat:disabled:hover, menuitem.button.flat:hover arrow:disabled, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled, menuitem.button.flat:disabled:checked, menuitem.button.flat:checked arrow:disabled,
+    modelbutton.flat:disabled:hover,
+    modelbutton.flat:hover arrow:disabled,
     modelbutton.flat:disabled:active,
     modelbutton.flat:active arrow:disabled,
     modelbutton.flat:disabled:selected,
-    modelbutton.flat:selected arrow:disabled, treeview.view:disabled:selected:focus, row:disabled:selected, calendar:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
+    modelbutton.flat:selected arrow:disabled,
+    modelbutton.flat:disabled:checked,
+    modelbutton.flat:checked arrow:disabled, treeview.view:disabled:selected:focus, row:disabled:selected, calendar:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .nemo-window .sidebar .view.cell:disabled:selected, .nemo-window .sidebar iconview.cell:disabled:selected, .nemo-window .sidebar row.cell:disabled:selected {
       color: #c0d7e7; }
@@ -3006,11 +2998,15 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   textview text:backdrop:selected,
   iconview text:backdrop:selected:focus,
   textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
-  textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+  textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:hover, menuitem.button.flat:hover arrow:backdrop, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop, menuitem.button.flat:backdrop:checked, menuitem.button.flat:checked arrow:backdrop,
+  modelbutton.flat:backdrop:hover,
+  modelbutton.flat:hover arrow:backdrop,
   modelbutton.flat:backdrop:active,
   modelbutton.flat:active arrow:backdrop,
   modelbutton.flat:backdrop:selected,
-  modelbutton.flat:selected arrow:backdrop, treeview.view:backdrop:selected:focus, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
+  modelbutton.flat:selected arrow:backdrop,
+  modelbutton.flat:backdrop:checked,
+  modelbutton.flat:checked arrow:backdrop, treeview.view:backdrop:selected:focus, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
   .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
   .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .nemo-window .sidebar .view.cell:backdrop:selected, .nemo-window .sidebar iconview.cell:backdrop:selected, .nemo-window .sidebar row.cell:backdrop:selected {
     color: rgba(247, 247, 247, 0.78);
