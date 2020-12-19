@@ -1035,6 +1035,8 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   border-color: rgba(17, 15, 9, 0); }
   .primary-toolbar button:backdrop, headerbar button:backdrop {
     opacity: 0.7; }
+    .primary-toolbar button:backdrop image, headerbar button:backdrop image, .primary-toolbar button:backdrop label, headerbar button:backdrop label, .primary-toolbar button:backdrop, headerbar button:backdrop {
+      color: inherit; }
   .primary-toolbar button:hover, headerbar button:hover {
     color: rgba(248, 246, 246, 0.8);
     border-color: rgba(0, 0, 0, 0.35);
@@ -1827,6 +1829,8 @@ switch {
     color: transparent;
     border: none;
     box-shadow: none; }
+  popover switch image, popover switch {
+    color: transparent; }
 
 switch {
   background-image: -gtk-scaled(url("assets/switch.png"), url("assets/switch@2.png")); }
