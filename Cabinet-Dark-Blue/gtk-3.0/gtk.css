@@ -2097,6 +2097,34 @@ row:selected radio:checked:disabled,
 infobar radio:checked:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-selected-dark.png"), url("assets/radio-checked-insensitive-selected-dark@2.png")); }
 
+checkbutton check:hover, popover check:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-selected-dark.png"), url("assets/checkbox-unchecked-selected-dark@2.png")); }
+
+checkbutton:hover {
+  background-color: #5D89A7;
+  color: #F7F7F7; }
+
+checkbutton check:checked:hover, popover check:checked:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected-dark.png"), url("assets/checkbox-checked-selected-dark@2.png")); }
+
+checkbutton:hover {
+  background-color: #5D89A7;
+  color: #F7F7F7; }
+
+radiobutton radio:hover, popover radio:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-selected-dark.png"), url("assets/radio-unchecked-selected-dark@2.png")); }
+
+radiobutton:hover {
+  background-color: #5D89A7;
+  color: #F7F7F7; }
+
+radiobutton radio:checked:hover, popover radio:checked:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected-dark.png"), url("assets/radio-checked-selected-dark@2.png")); }
+
+radiobutton:hover {
+  background-color: #5D89A7;
+  color: #F7F7F7; }
+
 popover check:active {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected-dark.png"), url("assets/checkbox-checked-selected-dark@2.png")); }
 
@@ -4776,6 +4804,9 @@ event.slanted-end label {
   border-color: #272D33;
   border-radius: 4px; }
 .budgie-menu .container {
+  background-color: #2D3741;
+  border-color: #2D3741; }
+.budgie-menu scrolledwindow {
   background-color: #2D3741;
   border-color: #2D3741; }
 .budgie-menu .categories {
