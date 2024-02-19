@@ -6391,17 +6391,17 @@ event.slanted-end label {
   margin: 0px;
 }
 .top .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
-  background-color: transparent;
-  border-left: 2px solid rgba(247, 247, 247, 0.45);
+  background-color: rgba(247, 247, 247, 0.1);
+  border-left: 2px solid rgba(247, 247, 247, 0.3);
   margin: 0px;
 }
 .top .budgie-panel .workspace-switcher .workspace-layout .current-workspace {
-  background-color: rgba(12, 15, 18, 0.23);
+  background-color: transparent;
   color: #f7f7f7;
   border-left: 2px solid transparent;
 }
 .top .budgie-panel .workspace-switcher .workspace-layout .current-workspace grid {
-  background-color: transparent;
+  background-color: rgba(247, 247, 247, 0.2);
   border-left: 2px solid #88b6d6;
   margin: 0px;
 }
@@ -6424,18 +6424,18 @@ event.slanted-end label {
   margin: 0px;
 }
 .right .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
-  background-color: transparent;
-  border-top: 2px solid rgba(247, 247, 247, 0.45);
+  background-color: rgba(247, 247, 247, 0.1);
+  border-top: 2px solid rgba(247, 247, 247, 0.3);
   margin: 0px;
 }
 .right .budgie-panel .workspace-switcher .workspace-layout .current-workspace {
-  background-color: rgba(12, 15, 18, 0.23);
+  background-color: transparent;
   color: #f7f7f7;
   border-top: 2px solid transparent;
   margin: 0px;
 }
 .right .budgie-panel .workspace-switcher .workspace-layout .current-workspace grid {
-  background-color: transparent;
+  background-color: rgba(247, 247, 247, 0.2);
   border-top: 2px solid #88b6d6;
   margin: 0px;
 }
@@ -6458,18 +6458,18 @@ event.slanted-end label {
   margin: 0px;
 }
 .bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
-  background-color: transparent;
-  border-left: 2px solid rgba(247, 247, 247, 0.45);
+  background-color: rgba(247, 247, 247, 0.1);
+  border-left: 2px solid rgba(247, 247, 247, 0.3);
   margin: 0px;
 }
 .bottom .budgie-panel .workspace-switcher .workspace-layout .current-workspace {
-  background-color: rgba(12, 15, 18, 0.23);
+  background-color: transparent;
   color: #f7f7f7;
   border-left: 2px solid transparent;
   margin: 0px;
 }
 .bottom .budgie-panel .workspace-switcher .workspace-layout .current-workspace grid {
-  background-color: transparent;
+  background-color: rgba(247, 247, 247, 0.2);
   border-left: 2px solid #88b6d6;
   margin: 0px;
 }
@@ -6492,18 +6492,18 @@ event.slanted-end label {
   margin: 0px;
 }
 .left .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
-  background-color: transparent;
-  border-top: 2px solid rgba(247, 247, 247, 0.45);
+  background-color: rgba(247, 247, 247, 0.1);
+  border-top: 2px solid rgba(247, 247, 247, 0.3);
   margin: 0px;
 }
 .left .budgie-panel .workspace-switcher .workspace-layout .current-workspace {
-  background-color: rgba(12, 15, 18, 0.23);
+  background-color: transparent;
   color: #f7f7f7;
   border-top: 2px solid transparent;
   margin: 0px;
 }
 .left .budgie-panel .workspace-switcher .workspace-layout .current-workspace grid {
-  background-color: transparent;
+  background-color: rgba(247, 247, 247, 0.2);
   border-top: 2px solid #88b6d6;
   margin: 0px;
 }
