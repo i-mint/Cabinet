@@ -4648,97 +4648,83 @@ panel-toplevel.background na-tray-applet {
   text-shadow: none;
   -gtk-icon-shadow: none;
 }
-.xfce4-panel.panel #clock-button {
-  background-color: #384856;
+.xfce4-panel.panel .tasklist .toggle {
+  background-color: #242629;
   color: #f7f7f7;
-  border-left: 7px solid #384856;
-  border-right: 7px solid #384856;
+  border-color: #000000;
+  border-radius: 4px;
 }
-.xfce4-panel.panel #clock-button:hover {
+.xfce4-panel.panel .tasklist .toggle:hover {
+  background-color: #6a6c6e;
+  color: #f7f7f7;
+  border-color: #000000;
+  border-radius: 4px;
+}
+.xfce4-panel.panel .tasklist .toggle:active, .xfce4-panel.panel .tasklist .toggle:checked, .xfce4-panel.panel .tasklist .toggle:checked:hover {
   background-color: #88b6d6;
   color: #F7F7F7;
-  border-left: 7px solid #88b6d6;
-  border-right: 7px solid #88b6d6;
+  border-color: #000000;
+  border-radius: 4px;
 }
-.xfce4-panel.panel #clock-button:active {
-  background-color: #b2d0e4;
-  color: #F7F7F7;
-  border-left: 7px solid #b2d0e4;
-  border-right: 7px solid #b2d0e4;
+.xfce4-panel.panel wnck-pager {
+  background-color: #c0d7e7;
 }
-.xfce4-panel.panel #clock-button:checked {
-  background-color: #88b6d6;
-  color: #F7F7F7;
-  border-left: 7px solid #88b6d6;
-  border-right: 7px solid #88b6d6;
+.xfce4-panel.panel wnck-pager:hover {
+  background-color: #d6e4ed;
 }
-
-.xfce4-panel .tasklist button {
-  color: rgba(247, 247, 247, 0.8);
-  background-color: #161c22;
-  border-radius: 0;
-  border: none;
-  border-left: 7px solid #161c22;
-  border-right: 7px solid #161c22;
-}
-.xfce4-panel .tasklist button:hover {
-  background-color: #2c3944;
-  color: #f7f7f7;
-  border-left: 7px solid #2c3944;
-  border-right: 7px solid #2c3944;
-}
-.xfce4-panel .tasklist button:active {
-  background-color: #425566;
-  color: #f7f7f7;
-  border-left: 7px solid #425566;
-  border-right: 7px solid #425566;
-}
-.xfce4-panel .tasklist button:checked {
-  background-color: #384856;
-  color: #f7f7f7;
-  border: none;
-  font-weight: normal;
-  border-left: 7px solid #384856;
-  border-right: 7px solid #384856;
-}
-
-.xfce4-panel wnck-pager {
-  background-color: rgba(136, 182, 214, 0.34);
-  color: #F7F7F7;
+.xfce4-panel.panel wnck-pager:selected {
+  border: 2px solid #000000;
 }
 
 .mate-panel-menu-bar button:not(#tasklist-button),
-panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel button.flat {
+panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel button.flat,
+.xfce4-panel.panel #xfce-panel-button,
+.xfce4-panel.panel #whiskermenu-button,
+.xfce4-panel.panel #pulseaudio-button,
+.xfce4-panel.panel #clock-button,
+.xfce4-panel.panel #indicator-button,
+.xfce4-panel.panel #sn-button,
+.xfce4-panel.panel #showdesktop-button {
+  background-color: transparent;
   color: #f7f7f7;
-  border-radius: 0;
-  border: none;
-  background-color: rgba(12, 15, 18, 0);
-  border-left: 7px solid rgba(12, 15, 18, 0);
-  border-right: 7px solid rgba(12, 15, 18, 0);
+  border-color: #000000;
+  border-radius: 4px;
 }
 .mate-panel-menu-bar button:hover:not(#tasklist-button),
-panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel button.flat:hover {
-  border: none;
-  background-color: #88b6d6;
-  border-left: 7px solid #88b6d6;
-  border-right: 7px solid #88b6d6;
+panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel button.flat:hover,
+.xfce4-panel.panel #xfce-panel-button:hover,
+.xfce4-panel.panel #whiskermenu-button:hover,
+.xfce4-panel.panel #pulseaudio-button:hover,
+.xfce4-panel.panel #clock-button:hover,
+.xfce4-panel.panel #indicator-button:hover,
+.xfce4-panel.panel #sn-button:hover,
+.xfce4-panel.panel #showdesktop-button:hover {
+  background-color: #6a6c6e;
+  color: #f7f7f7;
+  border-color: #000000;
+  border-radius: 4px;
 }
 .mate-panel-menu-bar button:active:not(#tasklist-button),
-panel-toplevel.background button:active:not(#tasklist-button), .xfce4-panel.panel button.flat:active {
-  color: #F7F7F7;
-  border: none;
-  background-color: #9fc4de;
-  border-left: 7px solid #9fc4de;
-  border-right: 7px solid #9fc4de;
-}
-.mate-panel-menu-bar button:checked:not(#tasklist-button),
-panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.panel button.flat:checked {
-  color: #F7F7F7;
-  border: none;
-  font-weight: normal;
+panel-toplevel.background button:active:not(#tasklist-button), .xfce4-panel.panel button.flat:active,
+.xfce4-panel.panel #xfce-panel-button:active,
+.xfce4-panel.panel #whiskermenu-button:active,
+.xfce4-panel.panel #pulseaudio-button:active,
+.xfce4-panel.panel #clock-button:active,
+.xfce4-panel.panel #indicator-button:active,
+.xfce4-panel.panel #sn-button:active,
+.xfce4-panel.panel #showdesktop-button:active, .mate-panel-menu-bar button:checked:not(#tasklist-button),
+panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.panel button.flat:checked,
+.xfce4-panel.panel #xfce-panel-button:checked,
+.xfce4-panel.panel #whiskermenu-button:checked,
+.xfce4-panel.panel #pulseaudio-button:checked,
+.xfce4-panel.panel #clock-button:checked,
+.xfce4-panel.panel #indicator-button:checked,
+.xfce4-panel.panel #sn-button:checked,
+.xfce4-panel.panel #showdesktop-button:checked {
   background-color: #88b6d6;
-  border-left: 7px solid #88b6d6;
-  border-right: 7px solid #88b6d6;
+  color: #F7F7F7;
+  border-color: #000000;
+  border-radius: 4px;
 }
 
 .nautilus-window .floating-bar {
