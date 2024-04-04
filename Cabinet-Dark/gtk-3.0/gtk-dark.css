@@ -3244,10 +3244,9 @@ calendar {
   color: #F7F7F7;
   border: 1px solid #202732;
   border-radius: 3px;
-  padding: 2px;
 }
 calendar:selected {
-  border-radius: 1.5px;
+  border-radius: 3px;
 }
 calendar.header {
   color: #F7F7F7;
@@ -4644,22 +4643,25 @@ panel-toplevel.background na-tray-applet {
   -gtk-icon-shadow: none;
 }
 .xfce4-panel.panel .tasklist .toggle {
+  background-color: transparent;
+  color: #f7f7f7;
+  border-color: #000000;
+  border-bottom: 2px solid transparent;
+  border-radius: 2px;
+}
+.xfce4-panel.panel .tasklist .toggle:hover {
+  background-color: #15181b;
+  color: #f7f7f7;
+  border-color: #000000;
+  border-bottom: 2px solid #5D89A7;
+  border-radius: 2px;
+}
+.xfce4-panel.panel .tasklist .toggle:active, .xfce4-panel.panel .tasklist .toggle:checked, .xfce4-panel.panel .tasklist .toggle:checked:hover {
   background-color: #242629;
   color: #f7f7f7;
   border-color: #000000;
-  border-radius: 4px;
-}
-.xfce4-panel.panel .tasklist .toggle:hover {
-  background-color: #6a6c6e;
-  color: #f7f7f7;
-  border-color: #000000;
-  border-radius: 4px;
-}
-.xfce4-panel.panel .tasklist .toggle:active, .xfce4-panel.panel .tasklist .toggle:checked, .xfce4-panel.panel .tasklist .toggle:checked:hover {
-  background-color: #5D89A7;
-  color: #F7F7F7;
-  border-color: #000000;
-  border-radius: 4px;
+  border-bottom: 2px solid #5D89A7;
+  border-radius: 2px;
 }
 .xfce4-panel.panel wnck-pager {
   background-color: #aac0cf;
@@ -4683,7 +4685,7 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   background-color: transparent;
   color: #f7f7f7;
   border-color: #000000;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 .mate-panel-menu-bar button:hover:not(#tasklist-button),
 panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel button.flat:hover,
@@ -4697,7 +4699,7 @@ panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel
   background-color: #6a6c6e;
   color: #f7f7f7;
   border-color: #000000;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 .mate-panel-menu-bar button:active:not(#tasklist-button),
 panel-toplevel.background button:active:not(#tasklist-button), .xfce4-panel.panel button.flat:active,
@@ -4719,7 +4721,7 @@ panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.pan
   background-color: #5D89A7;
   color: #F7F7F7;
   border-color: #000000;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .nautilus-window .floating-bar {
@@ -4879,52 +4881,6 @@ panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.pan
 .thunar notebook tabs > tab button.flat:hover {
   background-color: #4a5b6b;
   border: 0.5px solid #3c4956;
-}
-
-#whiskermenu-window {
-  background-color: #242C38;
-  color: #F7F7F7;
-}
-#whiskermenu-window stack {
-  background-color: #242C38;
-  color: #F7F7F7;
-}
-#whiskermenu-window .view, #whiskermenu-window iconview {
-  background-color: #2D3741;
-  color: #F3F3F3;
-}
-#whiskermenu-window .view:selected, #whiskermenu-window iconview:selected {
-  background-color: #4a5b6b;
-}
-#whiskermenu-window button {
-  margin-right: 9px;
-  background-color: #242C38;
-  color: #F7F7F7;
-  border: none;
-}
-#whiskermenu-window button:hover {
-  background-color: #404e63;
-  color: inherit;
-}
-#whiskermenu-window button:active, #whiskermenu-window button:checked {
-  background-color: #5D89A7;
-  color: #F7F7F7;
-}
-#whiskermenu-window entry:focus, #whiskermenu-window entry.search {
-  color: #F7F7F7;
-  border-color: #5D89A7;
-  background-color: #5D89A7;
-  box-shadow: inset 1px 0 #5D89A7, inset -1px 0 #5D89A7, inset 0 1px #5D89A7, inset 0 -1px #5D89A7;
-}
-#whiskermenu-window entry:focus image, #whiskermenu-window entry:focus image:hover, #whiskermenu-window entry.search image, #whiskermenu-window entry.search image:hover {
-  color: inherit;
-}
-
-#whiskermenu-button {
-  color: #f7f7f7;
-  border-left: 22px solid #384856;
-  border-right: 22px solid #384856;
-  background-color: #384856;
 }
 
 list.tweak-categories > separator {
